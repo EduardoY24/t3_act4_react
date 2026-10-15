@@ -7,9 +7,12 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+#Estas son dependencias que se generan con npm install y no es necesario subirlas, ya que se pueden instalar con npm install
 node_modules
+# Carpetas que se generan con npm run build
 dist
 dist-ssr
+# Archivos de configuración local que tampoco es necesario subir
 *.local
 
 # Editor directories and files
@@ -22,3 +25,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Asi se ignoran las variables de entorno el cual me podrian servir mas adelante para las contraseñas y llaves de API
+.env
+.env.*
+!.env.example
+
+# Archivos de windows
+Thumbs.db
+desktop.ini
